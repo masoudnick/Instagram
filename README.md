@@ -62,6 +62,6 @@ $ json-server --watch server/db.json --port 8000
 - [ ] Add loading component for using in pages.
 - [ ] show popover of user profile when hover on username.
 
-## 🌟 Show your support
+## support
 
 Give a ⭐️ if this project helped you!

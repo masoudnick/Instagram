@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Building Instagram from Scratch using Reactjs and Tailwind CSS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About This Project
 
-## Available Scripts
+This project is a clone of the Instagram web app.
+It's built using React, React libraries (react-router-dom, axios, swiper), Tailwind CSS and SCSS.
+Whatch this repo to be informed about the next updates of this application :)
 
-In the project directory, you can run:
+## Technologies
 
-### `npm start`
+- React v18.1.0: <a href="https://github.com/facebook/react" target="_blank">`Github`</a>
+- react-router-dom: v6.3.0: <a href="https://github.com/remix-run/react-router" target="_blank">`Github`</a>
+- axios v0.27.2: <a href="https://github.com/axios/axios" target="_blank">`Github`</a>
+- swiper v8.1.4: <a href="https://swiperjs.com/react" target="_blank">`Site`</a>
+- Tailwind v3.0.24: <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank">`Github`</a>
+- SASS v1.51.0: <a href="https://sass-lang.com/" target="_blank">`Site`</a>
+- json-server: v0.17.0: <a href="https://github.com/typicode/json-server" target="_blank">`Github`</a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation - Development
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In order to setup the project you'll need to the following steps
 
-### `npm test`
+### 1. Clone repo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Clone this repo to your local machine using following command :
 
-### `npm run build`
+```shell
+git clone https://github.com/masoudnick/instagram.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Setup development server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> Install npm dependencies using following command :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```shell
+$ cd instagram && npm install
+```
 
-### `npm run eject`
+> Run development server using following command :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```shell
+$ npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Runs the app with opening [http://localhost:3000](http://localhost:3000) in the browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3. Setup json server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> Run json server using following command, then server runs at http: // localhost: 800
 
-## Learn More
+```shell
+$ json-server --watch server/db.json --port 8000
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Todo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [] Implement authentication system.
+- [] Complete the comments and likes components of the posts.
+- [] Add more pages (user profile, direct message, explore, etc).
+- [] Add modal component for switch account and share posts.
+- [] Complete Search components.
+- [] Add loading component for using in pages.
+- [] show popover of user profile when hover on username.
 
-### Code Splitting
+## 🌟 Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a ⭐️ if this project helped you!

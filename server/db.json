@@ -1,0 +1,123 @@
+{
+  "stories": [
+    {
+      "id": 1,
+      "username": "leomessi",
+      "full_name": "Leo Messi",
+      "seen": false
+    },
+    {
+      "id": 2,
+      "username": "cristiano",
+      "full_name": "Cristiano Ronaldo",
+      "seen": false
+    },
+    {
+      "id": 3,
+      "username": "mosalah",
+      "full_name": "Mohamed Salah",
+      "seen": false
+    },
+    {
+      "id": 4,
+      "username": "sadiomaneofficiel",
+      "full_name": "Sadio Mane",
+      "seen": false
+    },
+    {
+      "id": 5,
+      "username": "karimbenzema",
+      "full_name": "Karim Benzema",
+      "seen": false
+    },
+    {
+      "id": 6,
+      "username": "neymarjr",
+      "full_name": "NJ 🇧🇷",
+      "seen": false
+    },
+    {
+      "id": 7,
+      "username": "k.mbappe",
+      "full_name": "Kylian Mbappé",
+      "seen": false
+    },
+    {
+      "id": 8,
+      "username": "kevindebruyne",
+      "full_name": "Kevin De Bruyne",
+      "seen": true
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "username": "leomessi",
+      "full_name": "Leo Messi",
+      "has_location": true,
+      "location": "Parc Des Princes",
+      "media_alt": "Photo by Leo Messi on April 23, 2022. May be an image of 2 people and text.",
+      "caption": "C A M P E O N E S ! ! ! 🏆",
+      "userId": 1,
+      "likes": 8007058,
+      "time": "2 days ago",
+      "date": "May 7, 2022"
+    },
+    {
+      "id": 2,
+      "username": "cristiano",
+      "full_name": "Cristiano Ronaldo",
+      "has_location": false,
+      "media_alt": "Photo shared by Cristiano Ronaldo on May 02, 2022 tagging @manchesterunited. May be an image of 1 person.",
+      "caption": "Once again, great support from the stands. Let’s take this opportunity of our last game of the season at Old Trafford to thank our amazing supporters, who endured a difficult season by our side and never abandoned us. Thanks, guys. Your support means the world to us and our goal is to become better everyday, so that we can achieve what we all want: glory for Man. United! 🙏🏽💪🏽",
+      "userId": 2,
+      "likes": 8229621,
+      "time": "6 days ago",
+      "date": "May 3, 2022"
+    },
+    {
+      "id": 3,
+      "username": "mosalah",
+      "full_name": "Mohamed Salah",
+      "has_location": false,
+      "media_alt": "Photo by Mohamed Salah on May 06, 2022. May be an image of 1 person, beard and standing.",
+      "caption": "Thank you to all those who voted for me. 😁",
+      "userId": 3,
+      "likes": 1402899,
+      "time": "3 days ago",
+      "date": "May 6, 2022"
+    }
+  ],
+  "recomended": [
+    {
+      "id": 1,
+      "username": "realmadrid",
+      "full_name": "Real Madrid C.F.",
+      "social_context": "Followed by karimbenzema"
+    },
+    {
+      "id": 2,
+      "username": "liverpoolfc",
+      "full_name": "Liverpool Football Club",
+      "social_context": "Followed by mosalah + 8 more"
+    },
+    {
+      "id": 3,
+      "username": "psg",
+      "full_name": "Paris Saint-Germain",
+      "social_context": "Followed by leomessi + 4 more"
+    },
+    {
+      "id": 4,
+      "username": "manchesterunited",
+      "full_name": "Manchester United",
+      "social_context": "Followed by cristiano + 3 more"
+    },
+    {
+      "id": 5,
+      "username": "mancity",
+      "full_name": "Manchester City",
+      "social_context": "Followed by kevindebruyne + 7 more"
+    }
+  ]
+}

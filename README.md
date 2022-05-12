@@ -1,4 +1,4 @@
-# An Instagram Clone created with Reactjs and Tailwind CSS
+# An Instagram Clone Created with Reactjs and Tailwind CSS
 
 ## About This Project
 

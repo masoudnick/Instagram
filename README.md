@@ -16,6 +16,9 @@ Watch this repo to be informed about the next updates of this application :)
 - SASS v1.51.0: <a href="https://sass-lang.com/" target="_blank">`Site`</a>
 - json-server v0.17.0: <a href="https://github.com/typicode/json-server" target="_blank">`Github`</a>
 
+## Preview App
+![Preview](app-preview.jpg?raw=true)
+
 ## Installation - Development
 
 In order to setup the project you'll need to the following steps :
@@ -25,7 +28,7 @@ In order to setup the project you'll need to the following steps :
 > Clone this repo to your local machine using following command :
 
 ```shell
-$ git clone https://github.com/masoudnick/instagram.git
+git clone https://github.com/masoudnick/instagram.git
 ```
 
 ### 2. Setup development server
@@ -33,13 +36,13 @@ $ git clone https://github.com/masoudnick/instagram.git
 > Install npm dependencies using following command :
 
 ```shell
-$ cd instagram && npm install
+cd instagram && npm install
 ```
 
 > Run development server using following command :
 
 ```shell
-$ npm start
+npm start
 ```
 
 > Runs the app with opening [http://localhost:3000](http://localhost:3000) in the browser.
@@ -49,7 +52,7 @@ $ npm start
 > Run json server using following command, then the server runs at [http://localhost:8000](http://localhost:8000)
 
 ```shell
-$ json-server --watch server/db.json --port 8000
+json-server --watch server/db.json --port 8000
 ```
 
 ## Todo
@@ -62,6 +65,6 @@ $ json-server --watch server/db.json --port 8000
 - [ ] Add loading component for using in pages.
 - [ ] show popover of user profile when hover on username.
 
-## support
+## Support
 
 Give a ⭐️ if this project helped you!

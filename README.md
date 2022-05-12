@@ -1,4 +1,4 @@
-# Building Instagram from Scratch using Reactjs and Tailwind CSS
+# An Instagram Clone created with Reactjs and Tailwind CSS
 
 ## About This Project
 

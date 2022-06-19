@@ -1,3 +1,13 @@
 .content-container {
-  max-width: 935px;
+  max-width: 821px;
+  margin-top: 60px;
+  padding-top: 10px;
+  .main-content {
+    max-width: 470px;
+    transform: translateY(-56px);
+    transition: transform 0.3s ease-out 0.2s;
+    &.is-loading {
+      transform: translateY(0);
+    }
+  }
 }

@@ -24,17 +24,11 @@ const UsefulLinks = () => {
         </li>
         <li>
           <Link to="https://about.instagram.com/">
-            Impressum/Terms/NetzDG/UrhDaG
+            Terms
           </Link>
         </li>
         <li>
           <Link to="/explore/locations/">Locations</Link>
-        </li>
-        <li>
-          <Link to="/directory/profiles/">Top Accounts</Link>
-        </li>
-        <li>
-          <Link to="/directory/hashtags/">Hashtags</Link>
         </li>
         <li>
           <Link to="https://about.instagram.com/">Language</Link>

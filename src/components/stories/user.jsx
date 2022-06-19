@@ -15,7 +15,7 @@ const User = ({ username, fullName, seen }) => {
           />
         </div>
       </div>
-      <p className="username overflow-hidden text-ellipsis whitespace-nowrap tracking-widest text-xs">
+      <p className="username overflow-hidden text-ellipsis whitespace-nowrap text-xs">
         {username}
       </p>
     </button>

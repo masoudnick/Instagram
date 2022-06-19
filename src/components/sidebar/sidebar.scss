@@ -1,7 +1,16 @@
 .sidebar {
-  top: 94px;
+  top: 85px;
   width: 100%;
-  max-width: 290px;
+  max-width: 319px;
+  &.is-loading {
+    position: absolute;
+    height: 80vh;
+    margin-bottom: 30px;
+    max-width: 293px;
+    padding: 0;
+    left: 0;
+    top: 60px;
+  }
   .suggestion-avatar {
     width: 32px;
     height: 32px;

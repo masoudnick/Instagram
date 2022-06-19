@@ -5,12 +5,13 @@ import useClickOutside from "../../hooks/useOutsideClick";
 
 const MenuDropdown = () => {
   const [isActive, setIsActive] = useState(false);
-  const ref = useRef(null);
+  const menuButton = useRef(null);
+  const menuDropdown = useRef(null);
 
   const handleActiveDropdown = () => {
     setIsActive((prev) => !prev);
   };
-  useClickOutside(ref, setIsActive);
+  useClickOutside(menuButton, menuDropdown, setIsActive);
   return (
     <>
       {isActive && <div className="active-border"></div>}
@@ -18,11 +19,11 @@ const MenuDropdown = () => {
       <button
         className="h-6 w-6 rounded-full border border-slate-200 overflow-hidden"
         onClick={handleActiveDropdown}
-        ref={ref}
+        ref={menuButton}
       >
         <img className="" src="/images/users/default.png" alt={``} />
       </button>
-      <div className={isActive ? "dropdown-box active" : "dropdown-box"}>
+      <div className={isActive ? "dropdown-box active" : "dropdown-box"} ref={menuDropdown}>
         <nav className="dropdown-inner" style={{ width: "230px" }}>
           <ul>
             <li className="menu-item hover:bg-gray-50 active:bg-gray-100">

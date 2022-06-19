@@ -1,14 +1,20 @@
-import { Sidebar, Stories, Posts } from "../../components";
+import { useState, useEffect } from "react";
+import { Sidebar, Stories, Posts, LargeSpinnerLoading } from "../../components";
 import "./style.scss";
 const Home = () => {
+  const [isLoading, setIsLoading] = useState(true);
   return (
-    <section className="mt-14 bg-neutral-50">
-      <div className="content-container flex mx-auto pt-7">
-        <div className="flex-[0_0_auto] w-2/3 mr-5 pr-2">
-          <Stories />
-          <Posts />
+    <section className="bg-neutral-50">
+      <div className="content-container flex mx-auto">
+        <div className="flex-[0_0_auto] mr-8">
+          <div
+            className={isLoading ? "main-content is-loading" : "main-content"}
+          >
+            <Stories isLoading={isLoading} setIsLoading={setIsLoading} />
+            <Posts />
+          </div>
         </div>
-        <div className="flex-[0_0_auto] w-1/3">
+        <div className="flex-[1_0_auto] relative">
           <Sidebar />
         </div>
       </div>

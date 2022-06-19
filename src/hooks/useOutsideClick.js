@@ -1,9 +1,16 @@
 import { useEffect } from "react";
 
-export default function useClickOutside(ref, setIsActive) {
+export default function useClickOutside(
+  dropdownToggle,
+  dropdownRef,
+  setIsActive
+) {
   useEffect(() => {
     function handleClickOutside(event) {
-      if (ref.current && !ref.current.contains(event.target)) {
+      if (
+        !dropdownRef.current.contains(event.target) &&
+        !dropdownToggle.current.contains(event.target)
+      ) {
         setIsActive(false);
       }
     }
@@ -11,5 +18,5 @@ export default function useClickOutside(ref, setIsActive) {
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, [ref, setIsActive]);
+  }, [dropdownToggle, dropdownRef, setIsActive]);
 }

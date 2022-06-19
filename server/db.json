@@ -59,7 +59,8 @@
       "media_alt": "Photo by Leo Messi on April 23, 2022. May be an image of 2 people and text.",
       "caption": "C A M P E O N E S ! ! ! 🏆",
       "userId": 1,
-      "likes": 8007058,
+      "liked": true,
+      "likes": 8007057,
       "time": "2 days ago",
       "date": "May 7, 2022"
     },
@@ -71,6 +72,7 @@
       "media_alt": "Photo shared by Cristiano Ronaldo on May 02, 2022 tagging @manchesterunited. May be an image of 1 person.",
       "caption": "Once again, great support from the stands. Let’s take this opportunity of our last game of the season at Old Trafford to thank our amazing supporters, who endured a difficult season by our side and never abandoned us. Thanks, guys. Your support means the world to us and our goal is to become better everyday, so that we can achieve what we all want: glory for Man. United! 🙏🏽💪🏽",
       "userId": 2,
+      "liked": false,
       "likes": 8229621,
       "time": "6 days ago",
       "date": "May 3, 2022"
@@ -83,6 +85,7 @@
       "media_alt": "Photo by Mohamed Salah on May 06, 2022. May be an image of 1 person, beard and standing.",
       "caption": "Thank you to all those who voted for me. 😁",
       "userId": 3,
+      "liked": false,
       "likes": 1402899,
       "time": "3 days ago",
       "date": "May 6, 2022"

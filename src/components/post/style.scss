@@ -1,5 +1,21 @@
+@keyframes like-button-animation {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .post {
   border: 1px solid #dbdbdb;
+  border-radius: 8px;
   .post-header {
     border-bottom: 1px solid #efefef;
   }
@@ -28,8 +44,14 @@
     button {
       padding: 8px;
     }
-    .like-action:hover {
-      svg {
+    .like-action {
+      &.liked {
+        animation-duration: 0.45s;
+        animation-name: like-button-animation;
+        animation-timing-function: ease-in-out;
+        transform: scale(1);
+      }
+      &:not(.liked):hover svg {
         fill: #8e8e8e;
       }
     }

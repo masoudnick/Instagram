@@ -62,7 +62,7 @@ json-server --watch server/db.json --port 8000
 - [ ] Add more pages (user profile, direct message, explore, etc).
 - [ ] Add modal component for switch account and share posts.
 - [ ] Complete Search components.
-- [ ] Add loading component for using in pages.
+- [x] Add loading component for using in pages.
 - [ ] show popover of user profile when hover on username.
 
 ## Support

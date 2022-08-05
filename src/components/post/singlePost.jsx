@@ -28,15 +28,16 @@ const SinglePost = ({ post }) => {
         likes: prev.likes + 1,
       }));
     }
-  }, []);
-
-  useEffect(() => {
     putLikePost(postLike.id, postLike)
       .then((res) => {
-        console.log(res);
+        // console.log(res);
       })
       .catch((error) => {});
   }, []);
+
+  // useEffect(() => {
+  //   console.log("like post");
+  // }, []);
 
   return (
     <article className="post flex flex-col overflow-hidden bg-white mb-3">

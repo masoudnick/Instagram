@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
-import { Sidebar, Stories, Posts, LargeSpinnerLoading } from "../../components";
+import { useState } from "react";
+import { Sidebar, Stories, Posts } from "../../components";
 import "./style.scss";
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
   return (
-    <section className="bg-neutral-50">
+    <section className="home-page bg-neutral-50">
       <div className="content-container flex mx-auto">
         <div className="flex-[0_0_auto] mr-8">
           <div

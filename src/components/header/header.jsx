@@ -3,7 +3,7 @@ import MenuDropdown from "./menu-dropdown";
 import ActivityDropdown from "./activity-dropdown";
 
 import "./style.scss";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo-sm.png";
 
 const Header = () => {
   return (

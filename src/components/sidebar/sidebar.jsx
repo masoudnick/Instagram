@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, memo } from "react";
 import { SmallSpinnerLoading } from "../index";
 import "./sidebar.scss";
 import User from "./user";
@@ -7,10 +7,10 @@ import UsefulLinks from "./usefulLinks";
 import CopyRight from "./copyright";
 
 const Sidebar = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     setTimeout(() => {
-      setIsLoading(false);
+      // setIsLoading(false);
     }, 1000);
   }, []);
   return (
@@ -35,4 +35,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default memo(Sidebar);

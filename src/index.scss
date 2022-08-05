@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0095f6;
+  --color-active-primary: rgba(0, 149, 246, 0.7);
+  --border-color: #dbdbdb;
+  --color-error: #ed4956;
+  --color-buttun-disabled: 0, 149, 246;
+  --color-gray: #8e8e8e;
+}
+
+body {
+  color: #262626;
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 0.875rem;
+  line-height: 18px;
+  background-color: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+img {
+  max-width: 100%;
+}
+.btn:active {
+  background-color: var(--color-active-primary);
+}
+button[disabled] {
+  pointer-events: none;
+  background-color: rgba(var(--color-buttun-disabled), 0.3);
+}
+a:active {
+  opacity: 0.5;
+}
+.insta-icons {
+  background-image: url("../src/assets/icons/groupicons.png");
+}
+.insta-glyfs {
+  background-image: url("../src/assets/icons/groupglyfs.png");
+}
+.text-gray {
+  color: var(--color-gray);
+}
+.border-gray {
+  border-color: var(--border-color);
+}
+*:focus {
+  outline: 0;
+}
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.text-primary {
+  color: var(--color-primary);
+}
+.text-danger {
+  color: var(--color-error);
+}

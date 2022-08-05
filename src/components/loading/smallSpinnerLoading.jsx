@@ -11,7 +11,7 @@ const SmallSpinnerLoading = ({ width, height }) => {
         viewBox="0 0 100 100"
       >
         <rect
-          fill="#555555"
+          fill="currentColor"
           height="10"
           opacity="0"
           rx="5"
@@ -22,7 +22,7 @@ const SmallSpinnerLoading = ({ width, height }) => {
           y="45"
         ></rect>
         <rect
-          fill="#555555"
+          fill="currentColor"
           height="10"
           opacity="0.125"
           rx="5"
@@ -33,7 +33,7 @@ const SmallSpinnerLoading = ({ width, height }) => {
           y="45"
         ></rect>
         <rect
-          fill="#555555"
+          fill="currentColor"
           height="10"
           opacity="0.25"
           rx="5"
@@ -44,7 +44,7 @@ const SmallSpinnerLoading = ({ width, height }) => {
           y="45"
         ></rect>
         <rect
-          fill="#555555"
+          fill="currentColor"
           height="10"
           opacity="0.375"
           rx="5"
@@ -55,7 +55,7 @@ const SmallSpinnerLoading = ({ width, height }) => {
           y="45"
         ></rect>
         <rect
-          fill="#555555"
+          fill="currentColor"
           height="10"
           opacity="0.5"
           rx="5"
@@ -66,7 +66,7 @@ const SmallSpinnerLoading = ({ width, height }) => {
           y="45"
         ></rect>
         <rect
-          fill="#555555"
+          fill="currentColor"
           height="10"
           opacity="0.625"
           rx="5"
@@ -77,7 +77,7 @@ const SmallSpinnerLoading = ({ width, height }) => {
           y="45"
         ></rect>
         <rect
-          fill="#555555"
+          fill="currentColor"
           height="10"
           opacity="0.75"
           rx="5"
@@ -88,7 +88,7 @@ const SmallSpinnerLoading = ({ width, height }) => {
           y="45"
         ></rect>
         <rect
-          fill="#555555"
+          fill="currentColor"
           height="10"
           opacity="0.875"
           rx="5"

@@ -1,7 +1,61 @@
 .direct-inbox {
+  margin-top: 55px;
+  height: 100%;
+  max-height: calc(100vh - 55px);
   .content-container {
     max-width: 935px;
     border: 1px solid rgba(219, 219, 219);
     padding-top: 0;
+    background-color: #fff;
+  }
+  .messages-box {
+    .title {
+      color: rgb(38, 38, 38);
+      font-size: 22px;
+    }
+    p {
+      color: rgb(142, 142, 142);
+    }
+    .btn {
+      background-color: rgb(0, 149, 246);
+      border: 1px solid transparent;
+      border-radius: 4px;
+    }
+  }
+  .users-box {
+    border-right: 1px solid rgb(219, 219, 219);
+    height: 100%;
+    overflow: hidden;
+    width: 350px;
+    .switch-account-box {
+      min-height: 60px;
+      border-bottom: 1px solid rgb(219, 219, 219);
+    }
+    .users-list {
+      overflow: hidden scroll;
+    }
+    .user-profile {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      &::after {
+        border: 1px solid rgba(var(--web-always-black), 0.0975);
+        border-radius: 50%;
+        bottom: 0;
+        content: "";
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+    .user-name {
+      color: rgb(38, 38, 38);
+    }
+    .message {
+    }
   }
 }

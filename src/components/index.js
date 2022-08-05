@@ -1,4 +1,5 @@
 import Header from "./header/header";
+import Footer from "./footer/footer";
 import Preloading from "./loading/preloading";
 import SmallSpinnerLoading from "./loading/smallSpinnerLoading";
 import LargeSpinnerLoading from "./loading/largeSpinnerLoading";
@@ -8,6 +9,7 @@ import Posts from "./post/posts";
 
 export {
   Header,
+  Footer,
   Sidebar,
   Stories,
   Posts,

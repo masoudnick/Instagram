@@ -29,7 +29,7 @@ const Stories = ({ isLoading, setIsLoading }) => {
     getStories();
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 3000);
   }, []);
 
   return (

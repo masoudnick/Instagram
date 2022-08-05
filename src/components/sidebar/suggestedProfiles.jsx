@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { Loadingskeleton } from "./loadingSkeleton";
+import { useState, useEffect, memo } from "react";
+import Loadingskeleton from "./loadingSkeleton";
 import { getAllRecomendedAPI } from "../../API";
+import { useMemo } from "react";
 
 const SuggestedProfiles = () => {
   const [users, setUsers] = useState([]);
@@ -16,6 +17,7 @@ const SuggestedProfiles = () => {
         setUsers([]);
       });
   };
+
   useEffect(() => {
     getRecomended();
     // setTimeout(() => {}, 2000);

@@ -1,15 +1,23 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { useState, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useClickOutside from "../../hooks/useOutsideClick";
+import { useAuth } from "../../contexts/Auth";
 
 const MenuDropdown = () => {
   const [isActive, setIsActive] = useState(false);
   const menuButton = useRef(null);
   const menuDropdown = useRef(null);
+  const { toggleAuth } = useAuth();
+  const navigate = useNavigate();
 
   const handleActiveDropdown = () => {
     setIsActive((prev) => !prev);
+  };
+
+  const handleLogOut = () => {
+    toggleAuth();
+    navigate("/accounts/login/", { replace: true });
   };
   useClickOutside(menuButton, menuDropdown, setIsActive);
   return (
@@ -23,7 +31,10 @@ const MenuDropdown = () => {
       >
         <img className="" src="/images/users/default.png" alt={``} />
       </button>
-      <div className={isActive ? "dropdown-box active" : "dropdown-box"} ref={menuDropdown}>
+      <div
+        className={isActive ? "dropdown-box active" : "dropdown-box"}
+        ref={menuDropdown}
+      >
         <nav className="dropdown-inner" style={{ width: "230px" }}>
           <ul>
             <li className="menu-item hover:bg-gray-50 active:bg-gray-100">
@@ -109,8 +120,11 @@ const MenuDropdown = () => {
               </Link>
             </li>
             <li className="menu-item flex border-t hover:bg-gray-50 active:bg-gray-100">
-              <form method="post" className="flex">
-                <button className="py-2.5 px-4 mb-1" type="submit">
+              <form className="grow" onSubmit={handleLogOut}>
+                <button
+                  className="py-2.5 px-4 mb-1 w-full text-left"
+                  type="submit"
+                >
                   Log Out
                 </button>
               </form>

@@ -14,3 +14,12 @@ export const putLikePost = async (podtId, post) => {
 };
 export const getPost = async (podtId) =>
   await Axios.get(`http://127.0.0.1:8000/posts/${podtId}`);
+
+export const getDirectMessages = async (page) =>
+  await Axios.get(`http://127.0.0.1:8000/direct?_page=${page}&_limit=7`);
+
+export const getUsers = async ({ username }) =>
+  await Axios.get(`http://127.0.0.1:8000/users?username=${username}`);
+
+export const saveUser = async ({ user }) =>
+  await Axios.post(`http://127.0.0.1:8000/users`, user);

@@ -60,7 +60,7 @@
       "caption": "C A M P E O N E S ! ! ! 🏆",
       "userId": 1,
       "liked": true,
-      "likes": 8007057,
+      "likes": 8007058,
       "time": "2 days ago",
       "date": "May 7, 2022"
     },
@@ -121,6 +121,132 @@
       "username": "mancity",
       "full_name": "Manchester City",
       "social_context": "Followed by kevindebruyne + 7 more"
+    }
+  ],
+  "direct": [
+    {
+      "id": 1,
+      "username": "leomessi",
+      "name": "Leo Messi",
+      "link": "/direct/leomessi",
+      "message": "Sent you a message",
+      "time": "1h",
+      "datetime": "Jul 7, 2022"
+    },
+    {
+      "id": 2,
+      "username": "cristiano",
+      "name": "Cristiano Ronaldo",
+      "link": "/direct/cristiano",
+      "message": "Sent a post",
+      "time": "1d",
+      "datetime": "Jul 6, 2022"
+    },
+    {
+      "id": 3,
+      "username": "mosalah",
+      "name": "Mohamed Salah",
+      "link": "/direct/mosalah",
+      "message": "Liked a message",
+      "time": "1d",
+      "datetime": "Jul 6, 2022"
+    },
+    {
+      "id": 4,
+      "username": "kevindebruyne",
+      "name": "Kevin De Bruyne",
+      "link": "/direct/kevindebruyne",
+      "message": "🔥🔥🔥",
+      "time": "5d",
+      "datetime": "Jul 2, 2022"
+    },
+    {
+      "id": 5,
+      "username": "karimbenzema",
+      "name": "Karim Benzema",
+      "link": "/direct/karimbenzema",
+      "message": "You reacted to their story: 👏",
+      "time": "1w",
+      "datetime": "Jun 30, 2022"
+    },
+    {
+      "id": 6,
+      "username": "neymarjr",
+      "name": "NJ 🇧🇷",
+      "link": "/direct/neymarjr",
+      "message": "You sent a story",
+      "time": "2w",
+      "datetime": "Jun 23, 2022"
+    },
+    {
+      "id": 7,
+      "username": "danialves",
+      "name": "Daniel Alves",
+      "link": "/direct/danialves",
+      "message": "Liked a message",
+      "time": "2w",
+      "datetime": "Jun 22, 2022"
+    },
+    {
+      "id": 8,
+      "username": "k.mbappe",
+      "name": "Kylian Mbappé",
+      "link": "/direct/k.mbappe",
+      "message": "Hi dear bro, where are you?",
+      "time": "3w",
+      "datetime": "Jun 16, 2022"
+    },
+    {
+      "id": 9,
+      "username": "sadiomaneofficiel",
+      "name": "Sadio Mane",
+      "link": "/direct/sadiomaneofficiel",
+      "message": "Mentioned you in their story",
+      "time": "3w",
+      "datetime": "Jun 15, 2022"
+    },
+    {
+      "id": 10,
+      "username": "xavi",
+      "name": "Xavi Hernández",
+      "link": "/direct/xavi",
+      "message": "Sent a post",
+      "time": "4w",
+      "datetime": "Jun 09, 2022"
+    },
+    {
+      "id": 11,
+      "username": "pedri",
+      "name": "Pedri González",
+      "link": "/direct/pedri",
+      "message": "Sent a post",
+      "time": "4w",
+      "datetime": "Jun 08, 2022"
+    },
+    {
+      "id": 12,
+      "username": "ansufati",
+      "name": "Ansu Fati",
+      "link": "/direct/ansufati",
+      "message": "Sent a post",
+      "time": "5w",
+      "datetime": "Jun 02, 2022"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "emailOrPhone": "admin@gmail.com",
+      "fullName": "Masoud",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "emailOrPhone": "admin@gmail.com",
+      "fullName": "Masoud",
+      "username": "admin",
+      "password": "admin"
     }
   ]
 }

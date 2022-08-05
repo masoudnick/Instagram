@@ -1,0 +1,61 @@
+.btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 9px;
+  text-align: center;
+  user-select: none;
+  border: 1px solid transparent;
+  width: auto;
+}
+.form-control {
+  width: 100%;
+  background: #fafafa;
+  padding: 10px 8px 10px 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  font-size: 0.875rem;
+  &:-webkit-autofill {
+    box-shadow: 0 0 0 30px #fafafa inset;
+  }
+}
+.form-floating {
+  position: relative;
+  .form-control {
+    height: 38px;
+  }
+  > label {
+    position: absolute;
+    color: #8e8e8e;
+    top: 0;
+    left: 0;
+    font-size: 0.765rem;
+    padding: 9px 8px 7px 8px;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: transform 0.1s ease-in-out;
+  }
+  &.active {
+    > label {
+      transform: scale(0.83333) translateY(-10px);
+      padding: 13px 10px 5px 10px;
+    }
+    .form-control {
+      padding: 15px 9px 3px 9px;
+    }
+  }
+}
+.toggle-password {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 8px;
+  & ~ input {
+    padding-right: 48px !important;
+  }
+}

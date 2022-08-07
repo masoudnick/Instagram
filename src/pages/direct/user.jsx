@@ -22,10 +22,8 @@ const User = ({ userList }) => {
   };
   const handleInfiniteScroll = (e) => {
     let target = e.target;
-    console.log(target.scrollTop, target.clientHeight, target.scrollHeight);
     if (target.scrollTop + target.clientHeight < target.scrollHeight) return;
     setIsFetching(true);
-    console.log("setIsFetching true");
   };
   useEffect(() => {
     setTimeout(() => {

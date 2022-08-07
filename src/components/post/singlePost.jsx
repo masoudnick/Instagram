@@ -14,26 +14,29 @@ const SinglePost = ({ post }) => {
     setIsReadMore(!isReadMore);
   };
 
-  const handleLikePost = useCallback(() => {
+  const handleLikePost = () => {
     if (postLike.liked) {
+      console.log("unliked");
       setPostLike((prev) => ({
         ...prev,
         liked: false,
         likes: prev.likes - 1,
       }));
     } else {
+      console.log("liked");
       setPostLike((prev) => ({
         ...prev,
         liked: true,
         likes: prev.likes + 1,
       }));
     }
-    putLikePost(postLike.id, postLike)
-      .then((res) => {
-        // console.log(res);
-      })
-      .catch((error) => {});
-  }, []);
+    console.log(postLike);
+    // putLikePost(postLike.id, postLike)
+    //   .then((res) => {
+    //     // console.log(res);
+    //   })
+    //   .catch((error) => {});
+  };
 
   // useEffect(() => {
   //   console.log("like post");
@@ -81,12 +84,12 @@ const SinglePost = ({ post }) => {
       <div className="post-footer">
         <Actions isLiked={postLike.liked} handleLikePost={handleLikePost} />
         <div className="post-info px-4">
-          <div className="likes-views font-xs font-medium mb-2">
+          <div className="likes-views font-xs font-bold mb-2">
             {postLike.likes.toLocaleString()} likes
           </div>
           <div className="post-desc">
             <span className="text-sm mb-2">
-              <Link to="" className="hover:underline font-semibold ">
+              <Link to="" className="hover:underline font-bold ">
                 {post.username}
               </Link>
               &nbsp;

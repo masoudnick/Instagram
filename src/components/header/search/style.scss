@@ -1,0 +1,21 @@
+.search-dropdown {
+  margin-left: -325px;
+  top: 30px !important;
+  .dropdown-inner {
+    width: 375px;
+    height: 362px;
+  }
+  .dropdown-arrow {
+    left: 185px;
+  }
+}
+.search-results {
+  .seen-story {
+    width: 52px;
+    height: 52px;
+  }
+  .unseen-story {
+    width: 54px;
+    height: 54px;
+  }
+}

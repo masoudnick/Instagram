@@ -1,6 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { useState, useRef } from "react";
-import useClickOutside from "../../hooks/useOutsideClick";
+import useClickOutside from "../../../hooks/useOutsideClick";
+import { Dropdown } from "./dropdown";
 
 const ActivityDropdown = () => {
   const [isActive, setIsActive] = useState(false);
@@ -10,7 +11,7 @@ const ActivityDropdown = () => {
   const handleActiveDropdown = () => {
     setIsActive((prev) => !prev);
   };
-  useClickOutside(activityButton,activityDropdown, setIsActive);
+  useClickOutside(activityButton, activityDropdown, setIsActive);
   return (
     <>
       <button onClick={handleActiveDropdown} ref={activityButton}>
@@ -32,23 +33,20 @@ const ActivityDropdown = () => {
           </svg>
         )}
       </button>
-
-      <div
-        className={isActive ? "dropdown-box active" : "dropdown-box"}
-        style={{ marginLeft: "-425px" }}
-        ref={activityDropdown}
+      <Dropdown
+        class="activity-dropdown"
+        active={isActive}
+        dropdownRef={activityDropdown}
       >
-        <div className="dropdown-inner" style={{ width: "500px" }}>
-          <div className="flex justify-center flex-col items-center px-10 h-full relative z-10 bg-white">
-            <div className="activity-logo insta-icons"></div>
-            <p className="mt-4">Activity On Your Posts</p>
-            <p className="mt-4 text-center">
-              When someone likes or comments on one of your posts, you'll see it
-              here.
-            </p>
-          </div>
+        <div className="flex justify-center flex-col items-center px-10 h-full relative z-10 bg-white">
+          <div className="activity-logo insta-icons"></div>
+          <p className="mt-4">Activity On Your Posts</p>
+          <p className="mt-4 text-center">
+            When someone likes or comments on one of your posts, you'll see it
+            here.
+          </p>
         </div>
-      </div>
+      </Dropdown>
     </>
   );
 };

@@ -17,10 +17,8 @@
 
 .spinner-loading-container {
   &.large-spinner {
-    height: 56px;
     opacity: 1;
     transition: opacity ease-out 0.3s;
-    padding-top: 14px;
     .spinner-loading {
       animation: loadingSpinnerLarge 1.2s steps(12) infinite;
     }

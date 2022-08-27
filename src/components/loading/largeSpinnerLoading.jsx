@@ -1,9 +1,21 @@
 import { memo } from "react";
 import "./style.scss";
 
-const LargeSpinnerLoading = ({ width, height, isLoading }) => {
+const LargeSpinnerLoading = ({
+  width,
+  height,
+  classes = "",
+  styles,
+  isLoading,
+}) => {
   return (
-    <div className="spinner-loading-container large-spinner flex justify-center">
+    <div
+      className={
+        "spinner-loading-container large-spinner flex justify-center w-full " +
+        classes
+      }
+      style={styles}
+    >
       {isLoading && (
         <svg
           className="spinner-loading"

@@ -34,7 +34,12 @@ const Stories = ({ isLoading, setIsLoading }) => {
 
   return (
     <>
-      <LargeSpinnerLoading width={32} height={32} isLoading={isLoading} />
+      <LargeSpinnerLoading
+        width={32}
+        height={32}
+        isLoading={isLoading}
+        styles={{ height: "58px", paddingTop: "14px" }}
+      />
       <nav className="stories flex bg-white border border-slate-300 rounded-lg py-4 my-4 pl-4">
         {stories.length !== 0 ? (
           <Swiper

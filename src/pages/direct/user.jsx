@@ -80,7 +80,13 @@ const User = ({ userList }) => {
           ))
         )}
         {isFetching && (
-          <LargeSpinnerLoading width={32} height={32} isLoading={isFetching} />
+          <LargeSpinnerLoading
+            width={32}
+            height={32}
+            classes="py-2"
+            styles={{ height: "72px" }}
+            isLoading={isFetching}
+          />
         )}
       </div>
     </>

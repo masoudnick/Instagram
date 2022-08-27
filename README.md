@@ -17,6 +17,7 @@ Watch this repo to be informed about the next updates of this application :)
 - json-server v0.17.0: <a href="https://github.com/typicode/json-server" target="_blank">`Github`</a>
 
 ## Preview App
+
 ![Preview](app-preview.jpg?raw=true)
 
 ## Installation - Development
@@ -57,11 +58,11 @@ json-server --watch server/db.json --port 8000
 
 ## Todo
 
-- [ ] Implement authentication system.
+- [x] Implement authentication system.
 - [ ] Complete the comments and likes components of the posts.
 - [ ] Add more pages (user profile, direct message, explore, etc).
 - [ ] Add modal component for switch account and share posts.
-- [ ] Complete Search components.
+- [x] Complete Search components.
 - [x] Add loading component for using in pages.
 - [ ] show popover of user profile when hover on username.
 

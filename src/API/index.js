@@ -23,3 +23,6 @@ export const getUsers = async ({ username }) =>
 
 export const saveUser = async ({ user }) =>
   await Axios.post(`http://127.0.0.1:8000/users`, user);
+
+export const getRecentSearchesApi = async () =>
+  await Axios.get(`http://127.0.0.1:8000/recent_searches`);

@@ -1,8 +1,11 @@
 import Header from "./header/header";
 import Footer from "./footer/footer";
-import Preloading from "./loading/preloading";
-import SmallSpinnerLoading from "./loading/smallSpinnerLoading";
-import LargeSpinnerLoading from "./loading/largeSpinnerLoading";
+import {
+  Preloading,
+  SmallSpinnerLoading,
+  LargeSpinnerLoading,
+} from "./loading/index";
+
 import Sidebar from "./sidebar/sidebar";
 import Stories from "./stories/stories";
 import Posts from "./post/posts";

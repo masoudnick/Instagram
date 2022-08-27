@@ -13,6 +13,7 @@ import "./App.scss";
 
 const Home = lazy(() => import("./pages/home/home"));
 const Direct = lazy(() => import("./pages/direct/direct"));
+const Profile = lazy(() => import("./pages/profile/profile"));
 const Login = lazy(() => import("./pages/login/login"));
 const Signup = lazy(() => import("./pages/signup/signup"));
 
@@ -25,8 +26,9 @@ function App() {
         <main className="bg-neutral-50">
           <Routes>
             <Route element={<PrivateRoutes />}>
-              <Route path="/" element={<Home />} />
+              <Route path="/" exact element={<Home />} />
               <Route path="/direct/inbox/" exact element={<Direct />} />
+              <Route path="/:username/" element={<Profile />} />
             </Route>
             <Route path="/accounts/login/" exact element={<Login />} />
             <Route path="/accounts/emailsignup/" exact element={<Signup />} />

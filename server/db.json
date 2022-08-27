@@ -233,20 +233,43 @@
       "datetime": "Jun 02, 2022"
     }
   ],
-  "users": [
+  "users": {
+    "id": 1,
+    "emailOrPhone": "admin@gmail.com",
+    "fullName": "Masoud",
+    "username": "admin",
+    "password": "admin"
+  },
+  "recent_searches": [
     {
-      "id": 1,
-      "emailOrPhone": "admin@gmail.com",
-      "fullName": "Masoud",
-      "username": "admin",
-      "password": "admin"
+      "user": {
+        "id": 1,
+        "username": "leomessi",
+        "full_name": "Leo Messi",
+        "seen": true
+      }
     },
     {
-      "id": 2,
-      "emailOrPhone": "admin@gmail.com",
-      "fullName": "Masoud",
-      "username": "admin",
-      "password": "admin"
+      "user": {
+        "id": 2,
+        "username": "cristiano",
+        "full_name": "Cristiano Ronaldo",
+        "seen": false
+      }
+    },
+    {
+      "hashtag": {
+        "id": 3,
+        "name": "LaLiga"
+      }
+    },
+    {
+      "user": {
+        "id": 4,
+        "username": "mosalah",
+        "full_name": "Mohamed Salah",
+        "seen": true
+      }
     }
   ]
 }

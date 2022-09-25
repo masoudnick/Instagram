@@ -55,6 +55,7 @@
       "username": "leomessi",
       "full_name": "Leo Messi",
       "has_location": true,
+      "seen": false,
       "location": "Parc Des Princes",
       "media_alt": "Photo by Leo Messi on April 23, 2022. May be an image of 2 people and text.",
       "caption": "C A M P E O N E S ! ! ! 🏆",
@@ -69,6 +70,7 @@
       "username": "cristiano",
       "full_name": "Cristiano Ronaldo",
       "has_location": false,
+      "seen": true,
       "media_alt": "Photo shared by Cristiano Ronaldo on May 02, 2022 tagging @manchesterunited. May be an image of 1 person.",
       "caption": "Once again, great support from the stands. Let’s take this opportunity of our last game of the season at Old Trafford to thank our amazing supporters, who endured a difficult season by our side and never abandoned us. Thanks, guys. Your support means the world to us and our goal is to become better everyday, so that we can achieve what we all want: glory for Man. United! 🙏🏽💪🏽",
       "userId": 2,
@@ -82,6 +84,7 @@
       "username": "mosalah",
       "full_name": "Mohamed Salah",
       "has_location": false,
+      "seen": false,
       "media_alt": "Photo by Mohamed Salah on May 06, 2022. May be an image of 1 person, beard and standing.",
       "caption": "Thank you to all those who voted for me. 😁",
       "userId": 3,
@@ -271,5 +274,66 @@
         "seen": true
       }
     }
-  ]
+  ],
+  "user_profile": {
+    "cristiano": {
+      "id": 1,
+      "username": "cristiano",
+      "full_name": "Cristiano Ronaldo",
+      "seen": false
+    },
+    "karimbenzema": {
+      "id": 2,
+      "username": "karimbenzema",
+      "full_name": "Karim Benzema",
+      "seen": false
+    },
+    "mosalah": {
+      "id": 3,
+      "username": "mosalah",
+      "full_name": "Mohamed Salah",
+      "seen": false
+    },
+    "realmadrid": {
+      "id": 4,
+      "biography": "⚽️ Official profile of Real Madrid C.F.\n🏆 14 times European Champions\n🌍 FIFA Best Club of the 20th Century\n📱 #RealFootball | 🙌 #RMFans",
+      "external_url": "https://bit.ly/RM_JengaQuiz",
+      "external_url_linkshimmed": "https://l.instagram.com/?u=https%3A%2F%2Fbit.ly%2FRM_JengaQuiz\u0026e=ATPAp8-CMqPbr-MIbolxzV-CXynY0VwyCC2FkexunqwLx8tMsWaRHBbkXl1n-vIkDxQE5d_hAHt6ho-JJFLTEw\u0026s=1",
+      "username": "realmadrid",
+      "full_name": "Real Madrid C.F.",
+      "edge_followed_by": 124331151,
+      "edge_follow": 45,
+      "media_count": 6998,
+      "is_verified": true,
+      "is_followed": false,
+      "seen": true,
+      "edge_mutual_followed_by": {
+        "edges": ["mosalah", "sadiomaneofficiel"]
+      }
+    },
+
+    "sadiomaneofficiel": {
+      "id": 5,
+      "username": "sadiomaneofficiel",
+      "full_name": "Sadio Mane",
+      "seen": false
+    },
+    "liverpoolfc": {
+      "id": 6,
+      "biography": "Official Instagram account of Liverpool Football Club 🔴 Stop The Hate, Report It.\n #RedTogether ✊",
+      "external_url": "linktr.ee/liverpoolfootballclub",
+      "external_url_linkshimmed": "https://l.instagram.com/?u=https%3A%2F%2Flinktr.ee%2Fliverpoolfootballclub&e=ATOlTwZio0q-bSspcNxKulcDzZ-OBdGfhuK6Lkq8HPnK_WJ3pLzm5YZ4Kh137mvEwsYHcghCneQf9Z5zEuqC0A&s=1",
+      "username": "liverpoolfc",
+      "full_name": "Liverpool Football Club",
+      "edge_followed_by": 40532800,
+      "edge_follow": 240,
+      "media_count": 20799,
+      "is_verified": true,
+      "is_followed": false,
+      "seen": true,
+      "edge_mutual_followed_by": {
+        "edges": ["mosalah", "sadiomaneofficiel"]
+      }
+    }
+  }
 }

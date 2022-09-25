@@ -9,10 +9,12 @@
   --color-error: #ed4956;
   --color-buttun-disabled: 0, 149, 246;
   --color-gray: #8e8e8e;
+  --color-link: 0, 55, 107;
+  --color-dark: #262626;
 }
 
 body {
-  color: #262626;
+  color: var(--color-dark);
   font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif;
   font-size: 0.875rem;
@@ -30,7 +32,7 @@ img {
   max-width: 100%;
 }
 .btn:active {
-  background-color: var(--color-active-primary);
+  // background-color: var(--color-active-primary);
 }
 button[disabled] {
   pointer-events: none;
@@ -59,6 +61,12 @@ a:active {
 }
 .text-primary {
   color: var(--color-primary);
+}
+.link-primary {
+  color: rgb(var(--color-link));
+}
+.text-dark {
+  color: var(--color-dark);
 }
 .text-danger {
   color: var(--color-error);

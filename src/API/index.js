@@ -21,6 +21,9 @@ export const getDirectMessages = async (page) =>
 export const getUsers = async ({ username }) =>
   await Axios.get(`http://127.0.0.1:8000/users?username=${username}`);
 
+export const getUserProfile = async () =>
+  await Axios.get(`http://127.0.0.1:8000/user_profile`);
+
 export const saveUser = async ({ user }) =>
   await Axios.post(`http://127.0.0.1:8000/users`, user);
 

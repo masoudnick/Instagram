@@ -1,4 +1,4 @@
-import { useState, useEffect, lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -34,7 +34,6 @@ function App() {
             <Route path="/accounts/emailsignup/" exact element={<Signup />} />
           </Routes>
         </main>
-        {!user.loggedIn && <Footer />}
       </Router>
     </Suspense>
   );

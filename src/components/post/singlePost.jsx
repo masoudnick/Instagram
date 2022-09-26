@@ -38,14 +38,11 @@ const SinglePost = ({ post }) => {
     //   .catch((error) => {});
   };
 
-  // useEffect(() => {
-  //   console.log("like post");
-  // }, []);
-
   return (
     <article className="post flex flex-col overflow-hidden bg-white mb-3">
       <div className="post-header pl-3 py-3 flex items-center justify-between">
-        <div className="post-profile flex items-center gap-3">
+        <div className="post-profile story-avatar flex items-center gap-3">
+          {!post.seen && <div className="unseen-story"></div>}
           <Link className="post-avatar" to={`/${post.username}/`}>
             <img
               src={`/images/users/${post.username}.jpg`}

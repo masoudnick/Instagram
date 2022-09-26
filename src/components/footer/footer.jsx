@@ -72,7 +72,7 @@ const topLinkes = [
 
 const Footer = () => {
   return (
-    <footer className="footer bg-zinc-50 pt-11">
+    <footer className="footer bg-zinc-50">
       <div className="flex flex-col">
         <div className="flex justify-center items-center flex-col pt-6 text-xs text-gray">
           <ul className="useful-linkes">

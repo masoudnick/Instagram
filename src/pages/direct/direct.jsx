@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import DirectIcon from "./direct-icon";
 import User from "./user";
 import "./style.scss";

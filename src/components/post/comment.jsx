@@ -5,7 +5,7 @@ import Emoji from "../emoji/emoji";
 const Comment = () => {
   const [disableCommentButton, setDisableCommentButton] = useState(true);
   const [commentText, setCommentText] = useState("");
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const commentTextareaRef = useRef(null);
 
   const handleChangeComment = useCallback(() => {
@@ -27,15 +27,15 @@ const Comment = () => {
   };
 
   return (
-    <div className="post-comments relative flex px-4 py-2">
-      <form className="flex items-center w-full" method="POST">
+    <div className="post-comments relative flex px-4 py-1">
+      <form className="flex items-center w-full h-10" method="POST">
         <div className="comment-emoji flex items-center pr-3">
           <Emoji
             commentTextareaRef={commentTextareaRef}
             handleChangeComment={handleChangeComment}
           />
         </div>
-        <div className="grow relative">
+        <div className="flex items-center grow relative h-full">
           <textarea
             className="comment-text w-full"
             name="comment"
@@ -50,7 +50,7 @@ const Comment = () => {
             <LargeSpinnerLoading
               width={32}
               height={32}
-              classes={"absolute inset-y-0.5 left-0"}
+              classes={"absolute items-center inset-y-0.5 left-0"}
               styles={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
               isLoading={setIsLoading}
             />
